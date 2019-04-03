@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_login.*
+import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
 class LoginActivity : AppCompatActivity() {
@@ -28,8 +29,10 @@ class LoginActivity : AppCompatActivity() {
             }else if(et_login_pw.text.toString()== ""){
                 et_login_pw.requestFocus()
                 toast("비밀번호를 입력하세요")
-            }else finish()
+            }else startActivity<MainActivity>()
         }
+
+
 
         val id = intent.getIntExtra("id",1)
         Toast.makeText(this,"id : ${id}",Toast.LENGTH_SHORT).show()
