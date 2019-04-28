@@ -4,12 +4,11 @@ import android.app.Activity
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import com.androidstudy.semina01.db.SharedPreferenceController
 import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.startActivityForResult
 import org.jetbrains.anko.toast
-import java.lang.ref.ReferenceQueue
 import java.text.SimpleDateFormat
 import java.util.*
 

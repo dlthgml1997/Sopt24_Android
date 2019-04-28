@@ -1,4 +1,4 @@
-package com.androidstudy.semina01
+package com.androidstudy.semina01.db
 
 import android.content.Context
 import android.content.SharedPreferences
