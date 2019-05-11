@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="63dp">
+    <LinearLayout
+            android:id="@+id/ll_rv_item_product_new_container"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:id="@+id/img_rv_item_product_new_thumbnail"
+                android:layout_width="88dp" android:layout_height="63dp"
+                android:src="@drawable/list_muneo_img"/>
+        <View
+                android:layout_width="0.5dp"
+                android:layout_height="64dp"
+                android:background="#CECECE"/>
+        <LinearLayout
+                android:layout_gravity="center"
+                android:paddingHorizontal="11.5dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/txt_rv_item_product_new_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="title"
+                    android:textSize="15dp"
+                    android:textColor="#484848"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="7dp"/>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+               <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:textSize="12dp"
+               android:textColor="#CECECE"
+               android:text="조회수"
+               android:layout_marginRight="1dp"/>
+                <TextView
+                        android:id="@+id/txt_rv_item_product_new_view_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="#CECECE"
+                        android:text="count"/>
+                <TextView
+                        android:id="@+id/txt_rv_item_product_new_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="12dp"
+                        android:textColor="#CECECE"
+                        android:text="date"
+                />
+            </LinearLayout>
 
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+            android:layout_below="@+id/ll_rv_item_product_new_container"
+            android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="#CECECE" />
 </RelativeLayout>

@@ -12,6 +12,8 @@ import kotlinx.android.synthetic.main.toolbar_product.*
 import org.sopt24.dshyun0226.androidseminar.Adapter.EpisodeOverviewRecyclerViewAdapter
 import org.sopt24.dshyun0226.androidseminar.Adapter.ProductOverviewRecyclerViewAdapter
 import org.sopt24.dshyun0226.androidseminar.Data.EpisodeOverviewData
+import org.sopt24.dshyun0226.androidseminar.Network.Get.GetMainProductListResponse
+import org.sopt24.dshyun0226.androidseminar.Network.NetworkService
 import org.sopt24.dshyun0226.androidseminar.R
 
 class ProductActivity : AppCompatActivity() {
@@ -30,7 +32,7 @@ class ProductActivity : AppCompatActivity() {
 
     private fun configureTitleBar(){
         title = intent.getStringExtra("title")
-        product_id = intent.getIntExtra("product_id", -1)
+        product_id = intent.getIntExtra("idx", -1)
         if(product_id == -1) finish()
 
         txt_toolbar_product_title.text = title
@@ -67,10 +69,12 @@ class ProductActivity : AppCompatActivity() {
                 product_id, 4, "http://sopt.org/wp/wp-content/uploads/2014/01/24_SOPT-LOGO_COLOR-1.png",
                 "에피소드 5", 10000, "2019-04-05"))
 
+
         episodeOverviewRecyclerViewAdapter = EpisodeOverviewRecyclerViewAdapter(this, dataList)
         rv_episode_overview_list.adapter = episodeOverviewRecyclerViewAdapter
         rv_episode_overview_list.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
     }
+
 }
 

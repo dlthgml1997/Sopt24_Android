@@ -12,7 +12,8 @@
         <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:id="@+id/img_rv_item_product_overview_thumbnail"/>
+                android:id="@+id/img_rv_item_product_overview_thumbnail"
+                android:layout_alignTop="@+id/ll_rv_item_product_overview_container"/>
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"

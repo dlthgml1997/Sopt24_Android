@@ -1,15 +1,16 @@
 package org.sopt24.dshyun0226.androidseminar.Adapter
 
 import android.content.Context
-import android.print.PrintDocumentAdapter
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.bumptech.glide.Glide
-import kotlinx.android.synthetic.main.rv_item_product_overview.view.*
+import org.jetbrains.anko.startActivity
+import org.sopt24.dshyun0226.androidseminar.Activity.ProductActivity
 import org.sopt24.dshyun0226.androidseminar.Data.ProductOverviewData
 import org.sopt24.dshyun0226.androidseminar.R
 
@@ -31,6 +32,13 @@ class ProductOverviewRecyclerViewAdapter(val ctx: Context, val dataList: ArrayLi
         holder.title.text = dataList[position].title
         holder.num_like.text = "♥" + dataList[position].num_like.toString()
         holder.author.text = dataList[position].author
+        holder.container.setOnClickListener {
+            ctx.startActivity<ProductActivity>(
+                "product_id" to dataList[position].product_id,
+                "title" to dataList[position].title
+            )
+        }
+
     }
 
     inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -38,5 +46,6 @@ class ProductOverviewRecyclerViewAdapter(val ctx: Context, val dataList: ArrayLi
         var title = itemView.findViewById(R.id.txt_rv_item_product_overview_title) as TextView
         var num_like = itemView.findViewById(R.id.txt_rv_item_product_overview_numlike) as TextView
         var author = itemView.findViewById(R.id.txt_rv_item_product_overview_author) as TextView
+        var container = itemView.findViewById(R.id.ll_rv_item_product_overview_container) as LinearLayout
     }
 }
