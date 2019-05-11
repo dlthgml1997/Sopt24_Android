@@ -29,60 +29,41 @@
                 android:layout_height="40dp"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:hint="아이디"
+                android:hint="이름"
                 android:textColorHint="#CECECE"
                 android:layout_marginTop="80dp"
                 android:paddingLeft="15dp"
                 android:background="@drawable/gray_border"
-                android:id="@+id/edtLoginID"
-                android:textSize="12dp"/>
+                android:id="@+id/edtSignupName" android:textSize="12dp"/>
         <EditText
                 android:layout_width="240dp"
                 android:layout_height="40dp"
-                android:inputType="textPassword"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:hint="아이디"
+                android:textColorHint="#CECECE"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/gray_border"
+                android:id="@+id/edtSignupID" android:textSize="12dp"/>
+        <EditText
+                android:layout_width="240dp"
+                android:layout_height="40dp"
                 android:ems="10"
                 android:hint="패스워드"
                 android:textColorHint="#CECECE"
                 android:layout_marginTop="15dp"
                 android:paddingLeft="15dp"
                 android:background="@drawable/gray_border"
-                android:id="@+id/edtLoginPW" android:textSize="12dp"/>
+                android:id="@+id/edtSignupPW" android:textSize="12dp" android:inputType="textPassword"/>
         <Button
-                android:text="로그인"
+                android:text="회원가입"
                 android:textSize="14dp"
                 android:layout_width="240dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/primary_border_fill"
-                android:id="@+id/btnLoginSubmit"
+                android:id="@+id/btnSignupSubmit"
                 style="?android:attr/borderlessButtonStyle" android:textColor="#FFFFFF" android:textStyle="bold"/>
-        <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp">
-            <TextView
-                    android:text="아직 회원이 아니십니까? "
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/txtLoginInfo"
-                    android:layout_weight="1"
-                    android:textColor="#C7C7C7"
-                    android:gravity="right" android:textSize="11dp"/>
-        </RelativeLayout>
-        <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp">
-            <TextView
-                    android:textStyle="bold"
-                    android:textColor="@color/colorPrimaryDarkYellow"
-                    android:text=" 회원가입"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/txtLoginSignup"
-                    android:layout_weight="1" android:textSize="11dp"/>
-        </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

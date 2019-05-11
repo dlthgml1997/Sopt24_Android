@@ -34,8 +34,7 @@
                 android:layout_marginTop="80dp"
                 android:paddingLeft="15dp"
                 android:background="@drawable/gray_border"
-                android:id="@+id/edtLoginID"
-                android:textSize="12dp"/>
+                android:id="@+id/edtLoginID" android:textSize="12dp"/>
         <EditText
                 android:layout_width="240dp"
                 android:layout_height="40dp"
