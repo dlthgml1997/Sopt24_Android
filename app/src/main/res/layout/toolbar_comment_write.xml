@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+        <TextView
+                android:id="@+id/txt_toolbar_comment_write_cancel"
+                android:layout_gravity="center_vertical"
+                android:text="취소"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#484848"/>
+        <TextView
+                android:id="@+id/txt_toolbar_comment_write_submit"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="확인"
+                android:gravity="right"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="#F5CF45"/>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>
