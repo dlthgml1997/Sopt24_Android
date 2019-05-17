@@ -14,7 +14,9 @@
         <include
                 android:id="@+id/toolbar_main"
                 layout="@layout/toolbar_main"/>
-        <RelativeLayout android:layout_width="match_parent" android:layout_height="200dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
             <android.support.v4.view.ViewPager
                     android:id="@+id/vp_main_slider"
                     android:layout_width="match_parent"

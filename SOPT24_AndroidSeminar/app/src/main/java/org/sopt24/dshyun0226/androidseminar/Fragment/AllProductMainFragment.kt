@@ -40,7 +40,6 @@ class AllProductMainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        /* 추후 서버와의 통신으로 대체할 부분입니다 */
         var dataList: ArrayList<ProductOverviewData> = ArrayList()
 
         productOverviewRecyclerViewAdapter = ProductOverviewRecyclerViewAdapter(context!!, dataList)

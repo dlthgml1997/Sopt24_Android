@@ -19,7 +19,8 @@
                 android:padding="10dp">
             <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/txt_rv_item_product_overview_title"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_rv_item_product_overview_title"
                     android:textSize="13dp"
                     android:textStyle="bold" android:textColor="#484848" android:text="작품명"/>
             <TextView

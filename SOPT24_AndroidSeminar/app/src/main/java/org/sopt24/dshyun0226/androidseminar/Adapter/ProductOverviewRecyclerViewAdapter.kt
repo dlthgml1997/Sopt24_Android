@@ -14,7 +14,8 @@ import org.sopt24.dshyun0226.androidseminar.Activity.ProductActivity
 import org.sopt24.dshyun0226.androidseminar.Data.ProductOverviewData
 import org.sopt24.dshyun0226.androidseminar.R
 
-class ProductOverviewRecyclerViewAdapter(var ctx:Context, var dataList:ArrayList<ProductOverviewData>):RecyclerView.Adapter<ProductOverviewRecyclerViewAdapter.Holder>() {
+class ProductOverviewRecyclerViewAdapter(var ctx:Context, var dataList:ArrayList<ProductOverviewData>) :
+    RecyclerView.Adapter<ProductOverviewRecyclerViewAdapter.Holder>() {
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): Holder {
         val view: View = LayoutInflater.from(ctx).inflate(R.layout.rv_item_product_overview, viewGroup, false)
         return Holder(view)

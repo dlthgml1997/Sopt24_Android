@@ -20,7 +20,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:padding="5dp"
-                android:layout_weight="1" android:gravity="center_vertical">
+                android:layout_weight="1"
+                android:gravity="center_vertical">
             <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
@@ -31,14 +32,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/txt_rv_item_comment_author" android:textSize="16dp"
-                        android:textStyle="bold" android:textColor="#484848"/>
+                        android:textStyle="bold"
+                        android:textColor="#484848"/>
                 <TextView
                         android:text="1999.01.01"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_gravity="bottom"
-                        android:id="@+id/txt_rv_item_comment_date" android:textSize="12dp" android:textColor="#CECECE"/>
+                        android:id="@+id/txt_rv_item_comment_date"
+                        android:textSize="12dp"
+                        android:textColor="#CECECE"/>
             </LinearLayout>
             <TextView
                     android:text="description"

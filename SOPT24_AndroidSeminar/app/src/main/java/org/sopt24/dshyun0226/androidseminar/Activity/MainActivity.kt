@@ -34,13 +34,9 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         configureTitleBar()
     }
+
     private fun configureTitleBar(){
-        if(SharedPreferenceController.getUserToken(this).isEmpty()){
-            img_toolbar_main_action.isSelected = false
-        }
-        else{
-            img_toolbar_main_action.isSelected = true
-        }
+        img_toolbar_main_action.isSelected = !SharedPreferenceController.getUserToken(this).isEmpty()
     }
 
     private fun configureMainTab() {
